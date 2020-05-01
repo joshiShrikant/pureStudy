@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  searchText: any;
   title = 'pureStudyApp';
+
+private applySearch(event): void {
+    console.log(event);
+  }
 }
