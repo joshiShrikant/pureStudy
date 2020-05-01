@@ -1,11 +1,11 @@
 <div class="main-container">
     <!-- Toolbar -->
     <div class="toolbar" role="banner" fxLayout="row" fxLayoutAlign="space-between center">
-        <div class="spacer"></div>
+        <!-- <div class="spacer"></div> -->
         <img alt="Logo" src="assets/images/icon.PNG">
         <div class="spacer"></div>
-        <div style="width: 40%; height: 75%;" fxFlex fxFlexLayout="row">
-            <div fxFlex fxFlex='20' fxLayoutAlign="center center" style="border: 1px solid grey;">
+        <div style="height: 75%;" fxFlex='100' fxFlex fxFlexLayout="row">
+            <div fxFlex fxFlex='25' fxLayoutAlign="center center" style="border: 1px solid grey;">
                 <mat-select placeholder="Bits">
                     <mat-option class="mat-Option">Bits</mat-option>
                     <mat-option>Bit</mat-option>
@@ -13,7 +13,9 @@
             </div>
             <input matInput type="text" class="apply-search" [(ngModel)]="searchText" (keyup.enter)="applySearch(event)">
         </div>
+        <div class="spacer"></div>
         <div>
+
             <div class="" fxLayout="row" fxLayoutAlign="end center">
                 <mat-icon class="mr-8">notifications</mat-icon>
                 <mat-icon class="mr-8">apps</mat-icon>
@@ -54,42 +56,228 @@
                 </div>
                 <div class="discription">
                     <p>
-                        discription discription discription discription discription discription discription discription discription discription discription discription discription discription discription discription discription discription <a>Read More...</a>
+                        Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical modes, along with exposition, argumentation, and narration. In practice it would be difficult to write
+                        literature that drew on just one of the four basic modes. <a>Read More...</a>
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="card-container" fxFlex="100" fxLayout="row" fxLayoutAlign="start start">
-            <div class="post-bits" fxFlex="60" fxLayout="row" fxLayoutAlign="center center">
+        <div class="card-container fwd" fxFlex="100" fxLayoutGap="5%" fxLayout="row" fxLayoutAlign="start start">
+            <div class="post-bits" fxFlex="55" fxLayout="row" fxLayoutAlign="start space-between" fxLayoutGap="70%">
                 <p style="font-weight: bold; font-size: large;">
-                    <mat-icon>mode_edit</mat-icon><span>Post Bits</span> </p>
+                    <mat-icon>mode_edit</mat-icon><span>&nbsp; Post Bits</span> </p>
                 <p>
                     <mat-icon>camera_alt</mat-icon>
                 </p>
             </div>
-            <div class="post-bits" fxFlex="40" fxLayout="row" fxLayoutAlign="center center">
+            <div class="post-bits" fxFlex="40" fxLayout="row" fxLayoutGap="20%" fxLayoutAlign="center center">
                 <p style=" font-weight: bold; font-size: large;">
-                    Start Disscussion </p>
+                    Start Discussion </p>
                 <p>
                     <mat-icon>call</mat-icon>
+                </p>
+                <p>
                     <mat-icon>videocam</mat-icon>
-
                 </p>
             </div>
         </div>
-        <footer>
-            Love Angular?&nbsp;
-            <a href="https://github.com/angular/angular" target="_blank" rel="noopener"> Give our repo a star.
-        <div class="github-star-badge">
-            <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
-          Star
+    </div>
+    <div class="content" fxLayout="row" fxLayoutGap="5%" fxLayoutAlign="start start">
+        <div class="card-container" fxFlex="55" fxLayout="column" fxLayoutAlign="start start">
+            <div class="post-bits mb-30" fxLayout="column" fxLayoutAlign="start space-between">
+                <div fxLayout="column">
+                    <div>
+                        <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    </div>
+                    <div fxLayout="column" style="margin-top: 7px;">
+                        <p> Eric Cantona</p>
+                        <p> 23/04/2020 at 11:14 AM</p>
+                    </div>
+                    <div style="margin-left: 58%;" fxLayoutAlign="end end">
+                        <p class="smallArrow"></p>
+                    </div>
+
+                </div>
+                <div fxFlex="100">
+                    <img class="max-width" src="assets/images/cardimg1.PNG">
+                </div>
+                <div>
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical modes, along with exposition, argumentation, and narration. In practice it would be difficult to write
+                        literature that drew on just one of the four basic modes.
+                    </p>
+                </div>
+            </div>
+
+            <div class="post-bits mb-30" fxLayout="column" fxLayoutAlign="start space-between">
+                <div fxLayout="column">
+                    <div>
+                        <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    </div>
+                    <div fxLayout="column" style="margin-top: 7px;">
+                        <p> Eric Cantona</p>
+                        <p> 23/04/2020 at 11:14 AM</p>
+                    </div>
+                    <div style="margin-left: 58%;" fxLayoutAlign="end end">
+                        <p class="smallArrow"></p>
+                    </div>
+
+                </div>
+                <div fxFlex="100">
+                    <img class="max-width" src="assets/images/cardimg1.PNG">
+                </div>
+                <div>
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place, object, character, or group. Description is one of four rhetorical modes, along with exposition, argumentation, and narration. In practice it would be difficult to write
+                        literature that drew on just one of the four basic modes.
+                    </p>
+                </div>
+            </div>
+
         </div>
-      </a>
-            <a href="https://github.com/angular/angular" target="_blank" rel="noopener">
-                <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="#1976d2"/><path d="M0 0h24v24H0z" fill="none"/></svg>
-            </a>
-        </footer>
+        <!-- </div>
+    <div class="content" fxLayout="column" fxLayoutAlign="start start"> -->
+        <div class="card-container" fxFlex="35" fxLayout="column" fxLayoutAlign="start start">
+            <div class="" style="border: 1px solid grey;" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
+                <h2>News and Announcemens</h2>
+                <h5>
+                    dfghjksdfghjk
+                </h5>
+                <h5>
+                    dfghjksdfghjk
+                </h5>
+                <h5>
+                    dfghjksdfghjk
+                </h5>
+                <h5>
+                    dfghjksdfghjk
+                </h5>
+            </div>
+            <div class="post-bits" fxFlex="100" fxLayout="column" fxLayoutGap="20%" fxLayoutAlign="center center">
+                <div fxFlex="100" fxLayout="row" fxLayoutGap="20%" fxLayoutAlign="center center">
+                    <p style=" font-weight: bold; font-size: large;">
+                        Disscussion </p>
+                    <p>
+                        <mat-icon>call</mat-icon>
+                    </p>
+                    <p>
+                        <mat-icon>videocam</mat-icon>
+                    </p>
+                </div>
+            </div>
+            <div class="post-bits" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
+                <div fxLayout="row">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place
+                    </p>
+                </div>
+                <div fxLayout="row">
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place
+                    </p>
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                </div>
+                <div fxLayout="row">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place
+                    </p>
+                </div>
+                <div fxLayout="row">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place
+                    </p>
+                </div>
+                <div fxLayout="row">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <p>
+                        Description is the pattern of narrative development that aims to make vivid a place
+                    </p>
+                </div>
+                <div fxLayout="row" style="min-width: 80%;" fxFlex="100" fxLayoutAlign="start start">
+                    <input matInput type="text" class="apply-search" [(ngModel)]="searchText" (keyup.enter)="applyDiscussionSearch(event)">
+                    <button><mat-icon>play_arrow</mat-icon></button>
+                </div>
+            </div>
+            <div class="mb-10" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
+                <h2>Experts (5)</h2>
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Jhon Wayne
+                        </p>
+                        <p>
+                            Writer
+                        </p>
+                    </Div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Eric Cantona
+                        </p>
+                        <p>
+                            Data Scientiest
+                        </p>
+                    </Div>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Maria Kanellis
+                        </p>
+                        <p>
+                            Devloper
+                        </p>
+                    </Div>
+                </div>
+            </div>
+
+            <div class="mb-10" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
+                <h2>Engaged (5)</h2>
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Jhon Wayne
+                        </p>
+                        <p>
+                            Writer
+                        </p>
+                    </Div>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Eric Cantona
+                        </p>
+                        <p>
+                            Data Scientiest
+                        </p>
+                    </Div>
+                </div>
+
+                <div fxLayout="row" fxLayoutAlign="start start">
+                    <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
+                    <Div fxLayout="column" fxLayoutAlign="start start">
+                        <p>
+                            Maria Kanellis
+                        </p>
+                        <p>
+                            Devloper
+                        </p>
+                    </Div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <router-outlet></router-outlet>
