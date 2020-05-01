@@ -22,16 +22,18 @@
         <div class="spacer"></div>
     </div>
 
-    <div class="content">
+    <div class="content" fxLayout="column" fxLayoutAlign="start start">
 
         <div class="profile-container" fxLayout="row" fxLayoutAlign="end center">
             <div class="background">
                 <img alt="background" src="assets/images/background.png">
             </div>
             <img alt="big-dp" src="assets/images/big-dp.png">
-            <div class="background">
-                <button class="mr-32" mat-stroked-button><mat-icon class="plusIcon">close &nbsp;</mat-icon>Engage</button>
-                <p class="arrow"></p>
+            <div class="background" fxLayout="column">
+                <div fxLayout="row" fxLayoutAlign="end end">
+                    <button class="mr-32" mat-stroked-button><mat-icon class="plusIcon">close &nbsp;</mat-icon>Engage</button>
+                    <p class="arrow"></p>
+                </div>
                 <p class="heading">
                     Artificial intelligence <span class="grey-text">(private)</span>
                 </p>
