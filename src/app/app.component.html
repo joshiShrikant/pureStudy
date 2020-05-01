@@ -1,6 +1,7 @@
 <div class="main-container">
     <!-- Toolbar -->
     <div class="toolbar" role="banner" fxLayout="row" fxLayoutAlign="space-between center">
+        <div class="spacer"></div>
         <img alt="Logo" src="assets/images/icon.PNG">
         <div class="spacer"></div>
         <div style="width: 40%; height: 75%;" fxFlex fxFlexLayout="row">
@@ -28,8 +29,11 @@
             <div class="background">
                 <img alt="background" src="assets/images/background.png">
             </div>
-            <img alt="big-dp" src="assets/images/bigdp.png">
-            <div class="background" fxLayout="column">
+            <div class="profileImg">
+                <img alt="big-dp" src="assets/images/bigdp.png">
+            </div>
+
+            <div class="pdrl" fxLayout="column">
                 <div fxLayout="row" fxLayoutAlign="end end">
                     <button class="mr-32" mat-stroked-button><mat-icon class="plusIcon">close &nbsp;</mat-icon>Engage</button>
                     <p class="arrow"></p>
@@ -37,13 +41,13 @@
                 <p class="heading">
                     Artificial intelligence <span class="grey-text">(private)</span>
                 </p>
-                <div fxLayout="row" fxLayoutAlign="start center">
-                    <p>
+                <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+                    <div fxFlex="40">
                         Karan Meshram
-                    </p>
-                    <div class="grey-text" fxLayout="row" fxLayoutAlign="center center">
+                    </div>
+                    <div fxFlex="40" fxLayoutGap="20%" class="grey-text" fxLayout="row" fxLayoutAlign="center center">
                         <!-- fxLayoutGap="10%" -->
-                        <p>7 expert</p>
+                        <p>7 Expert</p>
                         <p>48 Engaged</p>
                         <p>215 Bits</p>
                     </div>
@@ -58,14 +62,14 @@
 
         <div class="card-container" fxFlex="100" fxLayout="row" fxLayoutAlign="start start">
             <div class="post-bits" fxFlex="60" fxLayout="row" fxLayoutAlign="center center">
-                <p style="width: 60%; font-weight: bold; font-size: large;">
+                <p style="font-weight: bold; font-size: large;">
                     <mat-icon>mode_edit</mat-icon><span>Post Bits</span> </p>
                 <p>
                     <mat-icon>camera_alt</mat-icon>
                 </p>
             </div>
             <div class="post-bits" fxFlex="40" fxLayout="row" fxLayoutAlign="center center">
-                <p style="width: 40%; font-weight: bold; font-size: large;">
+                <p style=" font-weight: bold; font-size: large;">
                     Start Disscussion </p>
                 <p>
                     <mat-icon>call</mat-icon>
