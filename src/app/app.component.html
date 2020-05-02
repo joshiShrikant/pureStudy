@@ -11,7 +11,9 @@
                     <mat-option>Bit</mat-option>
                 </mat-select>
             </div>
-            <input matInput type="text" class="apply-search" [(ngModel)]="searchText" (keyup.enter)="applySearch(event)">
+            <div fxFlex='75'>
+                <input matInput type="text" class="apply-search" [(ngModel)]="searchText" (keyup.enter)="applySearch(event)">
+            </div>
         </div>
         <div class="spacer"></div>
         <div>
@@ -40,10 +42,10 @@
                     <button class="mr-32" mat-stroked-button><mat-icon class="plusIcon">close &nbsp;</mat-icon>Engage</button>
                     <p class="arrow"></p>
                 </div>
-                <p class="heading">
+                <p class="heading mb-1">
                     Artificial intelligence <span class="grey-text">(private)</span>
                 </p>
-                <div fxFlex fxLayout="row" fxLayoutAlign="start center">
+                <div class="mb-1" fxFlex fxLayout="row" fxLayoutAlign="start center">
                     <div fxFlex="40">
                         Karan Meshram
                     </div>
@@ -86,7 +88,7 @@
     <div class="content" fxLayout="row" fxLayoutGap="5%" fxLayoutAlign="start start">
         <div class="card-container" fxFlex="55" fxLayout="column" fxLayoutAlign="start start">
             <div class="post-bits mb-30" fxLayout="column" fxLayoutAlign="start space-between">
-                <div fxLayout="column">
+                <div fxLayout="row">
                     <div>
                         <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
                     </div>
@@ -111,7 +113,7 @@
             </div>
 
             <div class="post-bits mb-30" fxLayout="column" fxLayoutAlign="start space-between">
-                <div fxLayout="column">
+                <div fxLayout="row">
                     <div>
                         <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
                     </div>
@@ -136,26 +138,24 @@
             </div>
 
         </div>
-        <!-- </div>
-    <div class="content" fxLayout="column" fxLayoutAlign="start start"> -->
         <div class="card-container" fxFlex="35" fxLayout="column" fxLayoutAlign="start start">
-            <div class="" style="border: 1px solid grey;" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
-                <h2>News and Announcemens</h2>
-                <h5>
-                    dfghjksdfghjk
+            <div class="mb-10" style="border: 1px solid grey;" fxFlex="100" fxLayout="column" fxLayoutAlign="start start">
+                <h2 class="news">News and Announcemens</h2>
+                <h5 style="border-top: 1px solid gray;">
+                    Google News is a news aggregator app developed by Google. It presents a continuous, customizable flow of articles organized from thousands of publishers and magazines.
                 </h5>
                 <h5>
-                    dfghjksdfghjk
+                    Google News is a news aggregator app developed by Google. It presents a continuous, customizable flow of articles organized from thousands of publishers and magazines.
                 </h5>
                 <h5>
-                    dfghjksdfghjk
+                    Google News is a news aggregator app developed by Google. It presents a continuous, customizable flow of articles organized from thousands of publishers and magazines.
                 </h5>
                 <h5>
-                    dfghjksdfghjk
+                    Google News is a news aggregator app developed by Google. It presents a continuous, customizable flow of articles organized from thousands of publishers and magazines.
                 </h5>
             </div>
-            <div class="post-bits" fxFlex="100" fxLayout="column" fxLayoutGap="20%" fxLayoutAlign="center center">
-                <div fxFlex="100" fxLayout="row" fxLayoutGap="20%" fxLayoutAlign="center center">
+            <div class="disscussion-box" fxFlex="100" fxLayout="column" fxLayoutGap="20%" fxLayoutAlign="center center">
+                <div class="fwd disscussion-heading" fxFlex="100" fxLayout="row" fxLayoutGap="20%" fxLayoutAlign="center center">
                     <p style=" font-weight: bold; font-size: large;">
                         Disscussion </p>
                     <p>
@@ -191,7 +191,7 @@
                         Description is the pattern of narrative development that aims to make vivid a place
                     </p>
                 </div>
-                <div fxLayout="row">
+                <div fxLayout="row" style="border-bottom: 1px solid grey;">
                     <img class="dp mr-8" alt="dp" src="assets/images/dp.png">
                     <p>
                         Description is the pattern of narrative development that aims to make vivid a place
